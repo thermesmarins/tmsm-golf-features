@@ -37,8 +37,8 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-tmsm-golf-features-activator.php
  */
 function activate_tmsm_golf_features() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmsm-golf-features-activator.php';
-	Tmsm_Golf_Features_Activator::activate();
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmsm-golf-features-install.php';
+	Tmsm_Golf_Features_Install::activate();
 }
 
 /**
@@ -46,8 +46,8 @@ function activate_tmsm_golf_features() {
  * This action is documented in includes/class-tmsm-golf-features-deactivator.php
  */
 function deactivate_tmsm_golf_features() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmsm-golf-features-deactivator.php';
-	Tmsm_Golf_Features_Deactivator::deactivate();
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmsm-golf-features-install.php';
+	Tmsm_Golf_Features_Install::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_tmsm_golf_features' );

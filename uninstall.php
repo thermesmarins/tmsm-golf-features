@@ -29,3 +29,7 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+// Roles + caps.
+include_once( dirname( __FILE__ ) . '/includes/class-tmsm-golf-features-install.php' );
+
+Tmsm_Golf_Features_Install::remove_roles();

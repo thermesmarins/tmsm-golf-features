@@ -118,8 +118,8 @@ class Tmsm_Golf_Features_Admin {
 		$this->plugin_screen_hook_suffix = add_menu_page(
 			__( 'Weather', 'tmsm-golf-features' ),
 			__( 'Weather', 'tmsm-golf-features' ),
-			'manage_options',
-			$this->plugin_name,
+			'golf_weather',
+			$this->plugin_name.'-weather',
 			array( $this, 'display_options_page_weather' ),
 			'dashicons-cloud'
 		);
