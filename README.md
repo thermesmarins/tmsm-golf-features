@@ -1,17 +1,16 @@
 TMSM Golf Features
-=================
+==================
 
 Custom features for golf
 
 Features
------------
+--------
 
 * Weather options
 * Role "Golf Manager" [golf_manager] with custom capabilities
 
-
 How-to
------------
+------
 
 **Shortcode usage**
 
