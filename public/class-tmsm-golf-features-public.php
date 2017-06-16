@@ -32,6 +32,15 @@ class Tmsm_Golf_Features_Public {
 	private $plugin_name;
 
 	/**
+	 * The options name to be used in this plugin
+	 *
+	 * @since  	1.0.0
+	 * @access 	private
+	 * @var  	string 		$option_name 	Option name of this plugin
+	 */
+	private $option_name = 'tmsm_golf_features';
+
+	/**
 	 * The version of this plugin.
 	 *
 	 * @since    1.0.0
@@ -98,6 +107,61 @@ class Tmsm_Golf_Features_Public {
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tmsm-golf-features-public.js', array( 'jquery' ), $this->version, false );
 
+	}
+
+	/**
+	 * Register the shortcodes
+	 *
+	 * @since    1.0.0
+	 */
+	public function register_shortcodes() {
+		add_shortcode( 'tmsm-golf-features-weather', array( $this, 'weather_shortcodes') );
+	}
+
+	/**
+	 * Weather shortcode
+	 *
+	 * @since    1.0.0
+	 */
+	public function weather_shortcodes($atts) {
+		$atts = shortcode_atts( array(
+			'option' => '',
+		), $atts, 'tmsm-golf-features-weather' );
+
+		$option = $atts['option'];
+
+		switch($option){
+			case 'bagallowed':
+				$label = __( 'Bag allowed:', 'tmsm-golf-features' );
+				break;
+			case 'cartallowed':
+				$label = __( 'Cart allowed:', 'tmsm-golf-features' );
+				break;
+			case 'summergreen':
+				$label = __( 'Summer green:', 'tmsm-golf-features' );
+				break;
+			default:
+				$label = '';
+				break;
+		}
+
+		$value = '';
+		if(!empty($option)){
+			$value =  get_option( $this->option_name . '_'.$option );
+			if($value == 1){
+				$value = __( 'Yes', 'tmsm-golf-features' );
+			}
+			else{
+				$value = __( 'No', 'tmsm-golf-features' );
+			}
+		}
+
+		$output = sprintf( '<span class="weather-item"><span class="weather-label">%s</span> <span class="weather-value">%s</span></span>',
+			$label,
+			$value
+		);
+
+		return $output;
 	}
 
 }

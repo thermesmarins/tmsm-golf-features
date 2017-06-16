@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TMSM Golf Features\n"
-"POT-Creation-Date: 2017-06-16 10:04+0200\n"
-"PO-Revision-Date: 2017-06-16 10:06+0200\n"
+"POT-Creation-Date: 2017-06-16 11:29+0200\n"
+"PO-Revision-Date: 2017-06-16 11:29+0200\n"
+"Last-Translator: \n"
 "Language-Team: Nicolas Mollet <nico.mollet@gmail.com>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.1\n"
-"X-Poedit-KeywordsList: _e;__;_n:1,2;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_x:1,2c;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: \n"
-"Language: fr\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -41,11 +42,25 @@ msgstr "Modifiez les options."
 #: ../admin/class-tmsm-golf-features-admin.php:202
 #: ../admin/class-tmsm-golf-features-admin.php:224
 #: ../admin/class-tmsm-golf-features-admin.php:246
+#: ../public/class-tmsm-golf-features-public.php:152
 msgid "Yes"
 msgstr "Oui"
 
 #: ../admin/class-tmsm-golf-features-admin.php:207
 #: ../admin/class-tmsm-golf-features-admin.php:229
 #: ../admin/class-tmsm-golf-features-admin.php:251
+#: ../public/class-tmsm-golf-features-public.php:155
 msgid "No"
 msgstr "Non"
+
+#: ../public/class-tmsm-golf-features-public.php:135
+msgid "Bag allowed:"
+msgstr "Chariots acceptés&nbsp;:"
+
+#: ../public/class-tmsm-golf-features-public.php:138
+msgid "Cart allowed:"
+msgstr "Voiturettes autorisées&nbsp;:"
+
+#: ../public/class-tmsm-golf-features-public.php:141
+msgid "Summer green:"
+msgstr "Greens d'été&nbsp;:"

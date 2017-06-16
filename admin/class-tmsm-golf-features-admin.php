@@ -242,7 +242,7 @@ class Tmsm_Golf_Features_Admin {
 		?>
 		<fieldset>
 			<label>
-				<input type="radio" name="<?php echo $this->option_name . '_summergreen' ?>" id="<?php echo $this->option_name . '_summergreen' ?>" value="1" <?php checked( $summergreen, 1 ); ?>>
+				<input type="radio" name="<?php echo $this->option_name . '_summergreen' ?>" id="<?php echo $this->option_name . '_cartallowed' ?>" value="1" <?php checked( $summergreen, 1 ); ?>>
 				<?php _e( 'Yes', 'tmsm-golf-features' ); ?>
 			</label>
 			<br>
