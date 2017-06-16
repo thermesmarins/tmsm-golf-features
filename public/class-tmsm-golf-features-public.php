@@ -73,7 +73,7 @@ class Tmsm_Golf_Features_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/tmsm-golf-features-public.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/tmsm-golf-features-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,7 +96,7 @@ class Tmsm_Golf_Features_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tmsm-golf-features-public.js', array( 'jquery' ), $this->version, false );
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tmsm-golf-features-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 
