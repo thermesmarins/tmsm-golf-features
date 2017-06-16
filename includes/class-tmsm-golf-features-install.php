@@ -29,6 +29,7 @@ class Tmsm_Golf_Features_Install {
 	 */
 	public static function activate() {
 		self::create_roles();
+		self::update_roles();
 
 	}
 
@@ -70,41 +71,9 @@ class Tmsm_Golf_Features_Install {
 
 		// Golf Manager role
 		add_role( 'golf_manager', __( 'Golf Manager', 'tmsm-golf-features' ), array(
-			'level_9'                       => true,
-			'level_8'                       => true,
-			'level_7'                       => true,
-			'level_6'                       => true,
-			'level_5'                       => true,
-			'level_4'                       => true,
-			'level_3'                       => true,
-			'level_2'                       => true,
 			'level_1'                       => true,
 			'level_0'                       => true,
 			'read'                          => true,
-			'read_private_pages'            => true,
-			'read_private_posts'            => true,
-			'edit_users'                    => true,
-			'edit_posts'                    => true,
-			'edit_pages'                    => true,
-			'edit_published_posts'          => true,
-			'edit_published_pages'          => true,
-			'edit_private_pages'            => true,
-			'edit_private_posts'            => true,
-			'edit_others_posts'             => true,
-			'edit_others_pages'             => true,
-			'publish_posts'                 => true,
-			'publish_pages'                 => true,
-			'delete_posts'                  => true,
-			'delete_pages'                  => true,
-			'delete_private_pages'          => true,
-			'delete_private_posts'          => true,
-			'delete_published_pages'        => true,
-			'delete_published_posts'        => true,
-			'delete_others_posts'           => true,
-			'delete_others_pages'           => true,
-			'manage_categories'             => true,
-			'moderate_comments'             => true,
-			'upload_files'                  => true,
 			'gravityforms_edit_forms'       => true,
 			'gravityforms_create_form'      => true,
 			'gravityforms_view_entries'     => true,
@@ -129,6 +98,56 @@ class Tmsm_Golf_Features_Install {
 	}
 
 	/**
+	 * Update roles and capabilities.
+	 *
+	 * @since    1.0.0
+	 */
+	public static function update_roles() {
+
+		$golf_manager = get_role('golf_manager');
+
+		// Golf Manager role
+		$capabilities = array(
+			'level_9',
+			'level_8',
+			'level_7',
+			'level_6',
+			'level_5',
+			'level_4',
+			'level_3',
+			'level_2',
+			'read_private_pages',
+			'read_private_posts',
+			'edit_users',
+			'edit_posts',
+			'edit_pages',
+			'edit_published_posts',
+			'edit_published_pages',
+			'edit_private_pages',
+			'edit_private_posts',
+			'edit_others_posts',
+			'edit_others_pages',
+			'publish_posts',
+			'publish_pages',
+			'delete_posts',
+			'delete_pages',
+			'delete_private_pages',
+			'delete_private_posts',
+			'delete_published_pages',
+			'delete_published_posts',
+			'delete_others_posts',
+			'delete_others_pages',
+			'manage_categories',
+			'moderate_comments',
+			'upload_files',
+		);
+
+		foreach ( $capabilities as $cap ) {
+			$golf_manager->remove_cap( $cap );
+		}
+	}
+
+	/**
 	 * Get capabilities for WooCommerce - these are assigned to admin/shop manager during installation or reset.
 	 *
 	 * @return array
@@ -137,6 +156,7 @@ class Tmsm_Golf_Features_Install {
 
 		$capabilities['golf_features'] = array(
 			'golf_weather',
+		    'view_admin_dashboard'
 		);
 		return $capabilities;
 	}

@@ -121,7 +121,8 @@ class Tmsm_Golf_Features_Admin {
 			'golf_weather',
 			$this->plugin_name.'-weather',
 			array( $this, 'display_options_page_weather' ),
-			'dashicons-cloud'
+			'dashicons-cloud',
+			21
 		);
 	}
 
