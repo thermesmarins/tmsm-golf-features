@@ -13,8 +13,7 @@ Features
 How-to
 -----------
 
-Shortcode usage
----
+**Shortcode usage**
 
 [tmsm-golf-features-weather option="bagallowed"]
 [tmsm-golf-features-weather option="cartallowed"]
