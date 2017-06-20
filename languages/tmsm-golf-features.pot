@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TMSM Golf Features\n"
-"POT-Creation-Date: 2017-06-16 10:04+0200\n"
+"POT-Creation-Date: 2017-06-20 17:43+0200\n"
 "PO-Revision-Date: 2014-10-24 21:08+0100\n"
 "Last-Translator: Nicolas Mollet <nico.mollet@gmail.com>\n"
 "Language-Team: Nicolas Mollet <nico.mollet@gmail.com>\n"
@@ -20,34 +20,60 @@ msgstr ""
 
 #: ../admin/class-tmsm-golf-features-admin.php:119
 #: ../admin/class-tmsm-golf-features-admin.php:120
-#: ../admin/class-tmsm-golf-features-admin.php:145
+#: ../admin/class-tmsm-golf-features-admin.php:146
 msgid "Weather"
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:152
+#: ../admin/class-tmsm-golf-features-admin.php:153
 msgid "Bag allowed"
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:161
+#: ../admin/class-tmsm-golf-features-admin.php:162
 msgid "Cart allowed"
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:170
+#: ../admin/class-tmsm-golf-features-admin.php:171
 msgid "Summer green"
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:188
+#: ../admin/class-tmsm-golf-features-admin.php:189
 msgid "Please change the settings accordingly."
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:202
-#: ../admin/class-tmsm-golf-features-admin.php:224
-#: ../admin/class-tmsm-golf-features-admin.php:246
+#: ../admin/class-tmsm-golf-features-admin.php:203
+#: ../admin/class-tmsm-golf-features-admin.php:225
+#: ../admin/class-tmsm-golf-features-admin.php:247
+#: ../public/class-tmsm-golf-features-public.php:152
 msgid "Yes"
 msgstr ""
 
-#: ../admin/class-tmsm-golf-features-admin.php:207
-#: ../admin/class-tmsm-golf-features-admin.php:229
-#: ../admin/class-tmsm-golf-features-admin.php:251
+#: ../admin/class-tmsm-golf-features-admin.php:208
+#: ../admin/class-tmsm-golf-features-admin.php:230
+#: ../admin/class-tmsm-golf-features-admin.php:252
+#: ../public/class-tmsm-golf-features-public.php:155
 msgid "No"
+msgstr ""
+
+#: ../includes/class-tmsm-golf-features-install.php:65
+msgid "Golf Association"
+msgstr ""
+
+#: ../includes/class-tmsm-golf-features-install.php:75
+msgid "Golf Manager"
+msgstr ""
+
+#: ../includes/class-tmsm-golf-features-install.php:91
+msgid "Golf Weather"
+msgstr ""
+
+#: ../public/class-tmsm-golf-features-public.php:135
+msgid "Bag allowed:"
+msgstr ""
+
+#: ../public/class-tmsm-golf-features-public.php:138
+msgid "Cart allowed:"
+msgstr ""
+
+#: ../public/class-tmsm-golf-features-public.php:141
+msgid "Summer green:"
 msgstr ""

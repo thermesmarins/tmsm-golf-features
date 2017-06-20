@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TMSM Golf Features\n"
-"POT-Creation-Date: 2017-06-16 11:29+0200\n"
-"PO-Revision-Date: 2017-06-16 11:29+0200\n"
+"POT-Creation-Date: 2017-06-20 17:43+0200\n"
+"PO-Revision-Date: 2017-06-20 17:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: Nicolas Mollet <nico.mollet@gmail.com>\n"
 "Language: fr\n"
@@ -19,39 +19,51 @@ msgstr ""
 
 #: ../admin/class-tmsm-golf-features-admin.php:119
 #: ../admin/class-tmsm-golf-features-admin.php:120
-#: ../admin/class-tmsm-golf-features-admin.php:145
+#: ../admin/class-tmsm-golf-features-admin.php:146
 msgid "Weather"
 msgstr "Météo"
 
-#: ../admin/class-tmsm-golf-features-admin.php:152
+#: ../admin/class-tmsm-golf-features-admin.php:153
 msgid "Bag allowed"
 msgstr "Chariots acceptés"
 
-#: ../admin/class-tmsm-golf-features-admin.php:161
+#: ../admin/class-tmsm-golf-features-admin.php:162
 msgid "Cart allowed"
 msgstr "Voiturettes autorisées"
 
-#: ../admin/class-tmsm-golf-features-admin.php:170
+#: ../admin/class-tmsm-golf-features-admin.php:171
 msgid "Summer green"
 msgstr "Greens d'été"
 
-#: ../admin/class-tmsm-golf-features-admin.php:188
+#: ../admin/class-tmsm-golf-features-admin.php:189
 msgid "Please change the settings accordingly."
 msgstr "Modifiez les options."
 
-#: ../admin/class-tmsm-golf-features-admin.php:202
-#: ../admin/class-tmsm-golf-features-admin.php:224
-#: ../admin/class-tmsm-golf-features-admin.php:246
+#: ../admin/class-tmsm-golf-features-admin.php:203
+#: ../admin/class-tmsm-golf-features-admin.php:225
+#: ../admin/class-tmsm-golf-features-admin.php:247
 #: ../public/class-tmsm-golf-features-public.php:152
 msgid "Yes"
 msgstr "Oui"
 
-#: ../admin/class-tmsm-golf-features-admin.php:207
-#: ../admin/class-tmsm-golf-features-admin.php:229
-#: ../admin/class-tmsm-golf-features-admin.php:251
+#: ../admin/class-tmsm-golf-features-admin.php:208
+#: ../admin/class-tmsm-golf-features-admin.php:230
+#: ../admin/class-tmsm-golf-features-admin.php:252
 #: ../public/class-tmsm-golf-features-public.php:155
 msgid "No"
 msgstr "Non"
+
+#: ../includes/class-tmsm-golf-features-install.php:65
+msgid "Golf Association"
+msgstr "Association du Golf"
+
+#: ../includes/class-tmsm-golf-features-install.php:75
+msgid "Golf Manager"
+msgstr "Gestionnaire du Golf"
+
+#: ../includes/class-tmsm-golf-features-install.php:91
+msgid "Golf Weather"
+msgstr "Golf Météo"
 
 #: ../public/class-tmsm-golf-features-public.php:135
 msgid "Bag allowed:"
