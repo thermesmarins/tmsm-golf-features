@@ -127,6 +127,15 @@ class Tmsm_Golf_Features_Admin {
 	}
 
 	/**
+	 * Get capability for option page
+	 *
+	 * @since  1.0.3
+	 */
+	public function option_capabilities_weather($capability) {
+		return 'golf_weather';
+	}
+
+	/**
 	 * Render the options page for plugin
 	 *
 	 * @since  1.0.0
@@ -145,14 +154,14 @@ class Tmsm_Golf_Features_Admin {
 			$this->option_name . '_weather',
 			__( 'Weather', 'tmsm-golf-features' ),
 			array( $this, 'setting_section_weather_callback' ),
-			$this->plugin_name
+			$this->plugin_name.'-weather'
 		);
 
 		add_settings_field(
 			$this->option_name . '_bagallowed',
 			__( 'Bag allowed', 'tmsm-golf-features' ),
 			array( $this, 'setting_field_bagallowed_callback' ),
-			$this->plugin_name,
+			$this->plugin_name.'-weather',
 			$this->option_name . '_weather',
 			array( 'label_for' => $this->option_name . '_bagallowed' )
 		);
@@ -161,7 +170,7 @@ class Tmsm_Golf_Features_Admin {
 			$this->option_name . '_cartallowed',
 			__( 'Cart allowed', 'tmsm-golf-features' ),
 			array( $this, 'setting_field_cartallowed_callback' ),
-			$this->plugin_name,
+			$this->plugin_name.'-weather',
 			$this->option_name . '_weather',
 			array( 'label_for' => $this->option_name . '_cartallowed' )
 		);
@@ -170,14 +179,14 @@ class Tmsm_Golf_Features_Admin {
 			$this->option_name . '_summergreen',
 			__( 'Summer green', 'tmsm-golf-features' ),
 			array( $this, 'setting_field_summergreen_callback' ),
-			$this->plugin_name,
+			$this->plugin_name.'-weather',
 			$this->option_name . '_weather',
 			array( 'label_for' => $this->option_name . '_summergreen' )
 		);
 
-		register_setting( $this->plugin_name, $this->option_name . '_bagallowed', 'intval' );
-		register_setting( $this->plugin_name, $this->option_name . '_cartallowed', 'intval' );
-		register_setting( $this->plugin_name, $this->option_name . '_summergreen', 'intval' );
+		register_setting( $this->plugin_name.'-weather', $this->option_name . '_bagallowed', 'intval' );
+		register_setting( $this->plugin_name.'-weather', $this->option_name . '_cartallowed', 'intval' );
+		register_setting( $this->plugin_name.'-weather', $this->option_name . '_summergreen', 'intval' );
 	}
 
 	/**

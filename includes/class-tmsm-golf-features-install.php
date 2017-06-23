@@ -114,6 +114,16 @@ class Tmsm_Golf_Features_Install {
 	 */
 	public static function update_roles() {
 
+		/*$golf_manager = get_role('golf_manager');
+
+		// Golf Manager role
+		$capabilities = array(
+			'manage_options',
+		);
+
+		foreach ( $capabilities as $cap ) {
+			$golf_manager->remove_cap( $cap );
+		}*/
 	}
 
 	/**
