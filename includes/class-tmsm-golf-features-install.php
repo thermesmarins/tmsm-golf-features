@@ -63,18 +63,20 @@ class Tmsm_Golf_Features_Install {
 
 		// Golf Association role
 		add_role( 'golf_association', __( 'Golf Association', 'tmsm-golf-features' ), array(
-			'read'                   => true,
-			'edit_posts'             => true,
-			'edit_published_posts'   => true,
-			'edit_others_posts'      => true,
-			'read_private_posts'     => true,
-			'publish_posts'          => true,
+			'read'                 => true,
+			'edit_posts'           => true,
+			'edit_published_posts' => true,
+			'edit_others_posts'    => true,
+			'read_private_posts'   => true,
+			'publish_posts'        => true,
 		) );
 
 		// Golf Manager role
 		add_role( 'golf_manager', __( 'Golf Manager', 'tmsm-golf-features' ), array(
 			'level_1'                       => true,
 			'level_0'                       => true,
+			'edit_pages'                    => true,
+			'edit_published_pages'          => true,
 			'read'                          => true,
 			'gravityforms_edit_forms'       => true,
 			'gravityforms_create_form'      => true,
@@ -89,9 +91,9 @@ class Tmsm_Golf_Features_Install {
 
 		// Golf Weather role
 		add_role( 'golf_weather', __( 'Golf Weather', 'tmsm-golf-features' ), array(
-			'level_1'                       => true,
-			'level_0'                       => true,
-			'read'                          => true,
+			'level_1' => true,
+			'level_0' => true,
+			'read'    => true,
 		) );
 
 		$capabilities = self::get_core_capabilities();
@@ -114,16 +116,14 @@ class Tmsm_Golf_Features_Install {
 	 */
 	public static function update_roles() {
 
-		/*$golf_manager = get_role('golf_manager');
-
-		// Golf Manager role
+		$golf_manager = get_role( 'golf_manager' );
 		$capabilities = array(
-			'manage_options',
+			'edit_pages',
+			'edit_published_pages',
 		);
-
 		foreach ( $capabilities as $cap ) {
-			$golf_manager->remove_cap( $cap );
-		}*/
+			$golf_manager->add_cap( $cap );
+		}
 	}
 
 	/**
@@ -135,8 +135,9 @@ class Tmsm_Golf_Features_Install {
 
 		$capabilities['golf_features'] = array(
 			'golf_weather',
-		    'view_admin_dashboard'
+			'view_admin_dashboard',
 		);
+
 		return $capabilities;
 	}
 

@@ -1,3 +1,6 @@
+### 1.0.4: June 23th, 2017
+* Allow golf_manager to edit own pages
+
 ### 1.0.3: June 23th, 2017
 * Fix weather options page capabilities
 
