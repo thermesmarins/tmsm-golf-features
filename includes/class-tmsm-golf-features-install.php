@@ -30,6 +30,8 @@ class Tmsm_Golf_Features_Install {
 	public static function activate() {
 		self::create_roles();
 		self::update_roles();
+		// self::update_capabilities(); @TODO
+
 
 	}
 
@@ -73,9 +75,13 @@ class Tmsm_Golf_Features_Install {
 
 		// Golf Manager role
 		add_role( 'golf_manager', __( 'Golf Manager', 'tmsm-golf-features' ), array(
-			'level_1'                       => true,
-			'level_0'                       => true,
-			'edit_pages'                    => true,
+			'level_1'            => true,
+			'level_0'            => true,
+			'edit_pages'         => true,
+			'edit_others_pages'  => true,
+			'edit_private_pages' => true,
+			'publish_pages'      => true,
+			'read_private_pages' => true,
 			'edit_published_pages'          => true,
 			'read'                          => true,
 			'gravityforms_edit_forms'       => true,
@@ -127,6 +133,23 @@ class Tmsm_Golf_Features_Install {
 	}
 
 	/**
+	 * Update capabilities. @TODO
+	 *
+	 * @since    1.0.5
+	 */
+	public static function update_capabilities() {
+
+		$golf_manager = get_role( 'golf_manager' );
+		$capabilities = array(
+			'edit_pages',
+			'edit_published_pages',
+		);
+		foreach ( $capabilities as $cap ) {
+			$golf_manager->add_cap( $cap );
+		}
+	}
+
+	/**
 	 * Get capabilities for WooCommerce - these are assigned to admin/shop manager during installation or reset.
 	 *
 	 * @return array
@@ -161,9 +184,11 @@ class Tmsm_Golf_Features_Install {
 
 		foreach ( $capabilities as $cap_group ) {
 			foreach ( $cap_group as $cap ) {
-				$wp_roles->remove_cap( 'golf_manager', $cap );
-				$wp_roles->remove_cap( 'golf_association', $cap );
-				$wp_roles->remove_cap( 'golf_weather', $cap );
+				$wp_roles->add_cap( 'golf_manager', $cap );
+				$wp_roles->add_cap( 'golf_association', $cap );
+				$wp_roles->add_cap( 'golf_weather', $cap );
+				$wp_roles->add_cap( 'administrator', $cap );
+				$wp_roles->add_cap( 'editor', $cap );
 			}
 		}
 

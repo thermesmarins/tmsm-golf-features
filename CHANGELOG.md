@@ -1,3 +1,6 @@
+### 1.0.5: July 18th, 2017
+* Allow golf_manager to edit all pages
+
 ### 1.0.4: June 23th, 2017
 * Allow golf_manager to edit own pages
 

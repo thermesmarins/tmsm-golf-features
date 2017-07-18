@@ -16,7 +16,7 @@
  * Plugin Name:       TMSM Golf Features
  * Plugin URI:        https://github.com/thermesmarins/tmsm-golf-features
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.4
+ * Version:           1.0.5
  * Author:            Nicolas Mollet
  * Author URI:        https://github.com/nicomollet
  * License:           GPL-2.0+
