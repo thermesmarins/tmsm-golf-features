@@ -29,10 +29,6 @@ class Tmsm_Golf_Features_Install {
 	 */
 	public static function activate() {
 		self::create_roles();
-		self::update_roles();
-		// self::update_capabilities(); @TODO
-
-
 	}
 
 	/**
@@ -77,12 +73,12 @@ class Tmsm_Golf_Features_Install {
 		add_role( 'golf_manager', __( 'Golf Manager', 'tmsm-golf-features' ), array(
 			'level_1'            => true,
 			'level_0'            => true,
-			'edit_pages'         => true,
-			'edit_others_pages'  => true,
-			'edit_private_pages' => true,
-			'publish_pages'      => true,
-			'read_private_pages' => true,
-			'edit_published_pages'          => true,
+			'edit_pages'         => false,
+			'edit_others_pages'  => false,
+			'edit_private_pages' => false,
+			'publish_pages'      => false,
+			'read_private_pages' => false,
+			'edit_published_pages'          => false,
 			'read'                          => true,
 			'gravityforms_edit_forms'       => true,
 			'gravityforms_create_form'      => true,
@@ -112,23 +108,6 @@ class Tmsm_Golf_Features_Install {
 				$wp_roles->add_cap( 'administrator', $cap );
 				$wp_roles->add_cap( 'editor', $cap );
 			}
-		}
-	}
-
-	/**
-	 * Update roles and capabilities.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function update_roles() {
-
-		$golf_manager = get_role( 'golf_manager' );
-		$capabilities = array(
-			'edit_pages',
-			'edit_published_pages',
-		);
-		foreach ( $capabilities as $cap ) {
-			$golf_manager->add_cap( $cap );
 		}
 	}
 

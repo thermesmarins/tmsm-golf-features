@@ -1,3 +1,6 @@
+### 1.0.6: July 31st, 2017
+* Remove 'pages' capabilities for golf_manager
+
 ### 1.0.5: July 18th, 2017
 * Allow golf_manager to edit all pages
 
