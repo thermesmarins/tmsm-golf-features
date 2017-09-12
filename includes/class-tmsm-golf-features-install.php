@@ -67,6 +67,7 @@ class Tmsm_Golf_Features_Install {
 			'edit_others_posts'    => true,
 			'read_private_posts'   => true,
 			'publish_posts'        => true,
+			'upload_files'        => true,
 		) );
 
 		// Golf Manager role

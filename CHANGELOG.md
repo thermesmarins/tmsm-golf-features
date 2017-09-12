@@ -1,4 +1,7 @@
 ### 1.0.6: July 31st, 2017
+* Add 'upload_files' capabilities for golf_association
+
+### 1.0.6: July 31st, 2017
 * Remove 'pages' capabilities for golf_manager
 
 ### 1.0.5: July 18th, 2017
