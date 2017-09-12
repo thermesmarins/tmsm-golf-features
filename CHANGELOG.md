@@ -1,4 +1,4 @@
-### 1.0.6: July 31st, 2017
+### 1.0.7: September 12nd, 2017
 * Add 'upload_files' capabilities for golf_association
 
 ### 1.0.6: July 31st, 2017

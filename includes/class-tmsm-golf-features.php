@@ -69,7 +69,7 @@ class Tmsm_Golf_Features {
 	public function __construct() {
 
 		$this->plugin_name = 'tmsm-golf-features';
-		$this->version = '1.0.6';
+		$this->version = '1.0.7';
 
 		$this->load_dependencies();
 		$this->set_locale();
