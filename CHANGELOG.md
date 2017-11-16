@@ -1,3 +1,6 @@
+### 1.0.8: November 16th, 2017
+* **Tweak** - Gravity Forms: empty WP Rocket cache when saving form
+
 ### 1.0.7: September 12nd, 2017
 * Add 'upload_files' capabilities for golf_association
 

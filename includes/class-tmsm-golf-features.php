@@ -69,7 +69,7 @@ class Tmsm_Golf_Features {
 	public function __construct() {
 
 		$this->plugin_name = 'tmsm-golf-features';
-		$this->version = '1.0.7';
+		$this->version = '1.0.8';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -156,6 +156,7 @@ class Tmsm_Golf_Features {
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_menu_page_weather' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_settings_weather' );
 		$this->loader->add_filter( 'option_page_capability_tmsm-golf-features-weather', $plugin_admin, 'option_capabilities_weather');
+		$this->loader->add_action( 'gform_after_save_form', $plugin_admin, 'empty_wprocket_cache_on_gform_after_save_form');
 
 	}
 

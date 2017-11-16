@@ -264,4 +264,15 @@ class Tmsm_Golf_Features_Admin {
 		<?php
 	}
 
+	/**
+	 * Empty WP Rocket cache on Gravity Form save form
+	 *
+	 * @since  1.0.8
+	 */
+	public function empty_wprocket_cache_on_gform_after_save_form(){
+		// clear cache of the default domain
+		if(function_exists('rocket_clean_domain')){
+			rocket_clean_domain();
+		}
+	}
 }
