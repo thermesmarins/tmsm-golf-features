@@ -1,3 +1,6 @@
+### 1.0.9: April 12th, 2019
+* **New** - Plugin logo
+
 ### 1.0.8: November 16th, 2017
 * **Tweak** - Gravity Forms: empty WP Rocket cache when saving form
 
